@@ -23,6 +23,8 @@ set -euo pipefail
 # By default, this script does nothing.  You'll have to modify it as
 # appropriate for your application.
 
+export DEBIAN_FRONTEND=noninteractive
+apt-get update
 apt-get install libreoffice
 
 exit 0
